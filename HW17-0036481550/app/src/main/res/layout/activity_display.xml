@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hr.fer.android.jmbag0036481550.hw17_0036481550.DisplayActivity">
+
+    <TextView
+        android:id="@+id/editTextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/component_doublespacing"
+        android:background="@drawable/resulttextshape"
+        android:ems="10"
+        android:padding="5dp"
+        android:textColor="@color/componentForeground"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextResult"
+        android:layout_marginBottom="@dimen/component_spacing"
+        android:background="@drawable/buttonshape"
+        android:onClick="onOKClick"
+        android:text="@string/buttonOKText"
+        android:textColor="@color/componentForeground"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonOK"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonOK"
+        android:layout_marginBottom="@dimen/component_spacing"
+        android:background="@drawable/buttonshape"
+        android:onClick="onReportEMailClick"
+        android:text="@string/buttonResultText"
+        android:textColor="@color/componentForeground"
+        android:textSize="20sp" />
+
+</RelativeLayout>

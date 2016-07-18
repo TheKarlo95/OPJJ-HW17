@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HW17-0036481550</string>
+    <string name="editTextNumber1Hint">Prvi broj</string>
+    <string name="editTextNumber2Hint">Drugi broj</string>
+    <string name="buttonCalculateText">Izračunaj</string>
+    <string name="buttonOKText">OK</string>
+    <string name="buttonResultText">Pošalji izvještaj</string>
+    <string name="textViewOperationText">Odaberi operaciju:</string>
+</resources>

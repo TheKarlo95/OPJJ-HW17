@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hr.fer.android.jmbag0036481550.hw17_0036481550.CalculusActivity">
+
+    <TextView
+        android:id="@+id/textViewOperation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewOperationText"
+        android:textAlignment="center"
+        android:textColor="@color/componentForeground"
+        android:textSize="26sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOperation"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_add"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableEnd="@drawable/add"
+            android:onClick="onRadioButtonClick" />
+
+        <RadioButton
+            android:id="@+id/radioButton_sub"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/sub"
+            android:onClick="onRadioButtonClick" />
+
+        <RadioButton
+            android:id="@+id/radioButton_mul"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/mul"
+            android:onClick="onRadioButtonClick" />
+
+        <RadioButton
+            android:id="@+id/radioButton_div"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/div"
+            android:onClick="onRadioButtonClick" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/component_spacing"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/numbertextshape"
+        android:hint="@string/editTextNumber1Hint"
+        android:inputType="numberDecimal|numberSigned"
+        android:nextFocusDown="@+id/editTextNumber2"
+        android:textAlignment="center"
+        android:textColor="@color/componentForeground"
+        android:textColorHint="@color/componentHint"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextNumber1"
+        android:layout_below="@+id/editTextNumber1"
+        android:layout_marginBottom="@dimen/component_doublespacing"
+        android:background="@drawable/numbertextshape"
+        android:hint="@string/editTextNumber2Hint"
+        android:inputType="numberDecimal|numberSigned"
+        android:nextFocusDown="@+id/buttonCalculate"
+        android:textAlignment="center"
+        android:textColor="@color/componentForeground"
+        android:textColorHint="@color/componentHint"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNumber2"
+        android:background="@drawable/buttonshape"
+        android:onClick="onCalculateClick"
+        android:text="@string/buttonCalculateText"
+        android:textColor="@color/componentForeground"
+        android:textSize="20sp" />
+
+</RelativeLayout>
